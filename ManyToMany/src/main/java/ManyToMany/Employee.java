@@ -21,7 +21,7 @@ public class Employee {
 	@Column(name = "eName")
 	private String eName;
 	
-	@ManyToMany(fetch = FetchType.EAGER ,cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
+	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST,CascadeType.REFRESH})
 	@JoinTable(name = "emp_pro",
 			joinColumns = @JoinColumn (name ="emp_id"),
 			inverseJoinColumns = @JoinColumn(name = "pro_id")
