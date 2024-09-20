@@ -34,6 +34,7 @@ public class Launch {
 		  s.persist(p2);
 		  
 		  t.commit();
+		  
 		  System.out.println("Success.");
 	}
 
